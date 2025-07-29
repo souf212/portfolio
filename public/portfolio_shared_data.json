@@ -14,7 +14,7 @@
           "class": "fab fa-instagram"
         }
       ],
-      "image": "myProfile.jpg"
+      "image": "myp.jpg"
     },
     "skills": {
       "icons": [
@@ -29,29 +29,9 @@
           "level": "95"
         },
         {
-          "name": "Angular",
-          "class": "devicon-angularjs-plain",
-          "level": "80"
-        },
-        {
-          "name": "TypeScript",
-          "class": "devicon-typescript-plain",
-          "level": "90"
-        },
-        {
           "name": "JavaScript",
           "class": "devicon-javascript-plain",
           "level": "70"
-        },
-        {
-          "name": "Sass",
-          "class": "devicon-sass-original",
-          "level": "75"
-        },
-        {
-          "name": "Bootstrap",
-          "class": "devicon-bootstrap-plain",
-          "level": "85"
         },
         {
           "name": "C#",
@@ -59,10 +39,80 @@
           "level": "65"
         },
         {
-          "name": "MySql",
+          "name": "Bootstrap",
+          "class": "devicon-bootstrap-plain",
+          "level": "85"
+        },
+        {
+          "class": "devicon-symfony-plain",
+          "name": "symfony",
+          "level": "85"
+        },
+        {
+          "class": "devicon-dotnetcore-plain",
+          "name": "ASP.NET Core",
+          "level": "65"
+        },
+        {
+          "class": "devicon-spring-plain",
+          "name": "Spring Boot",
+          "level": "65"
+        },
+        {
+          "class": "devicon-react-original",
+          "name": "React",
+          "level": "65"
+        },
+        {
+          "class": "devicon-java-plain",
+          "name": "Jakarta EE",
+          "level": "65"
+        },
+        {
+          "class": "devicon-python-plain",
+          "name": "Python",
+          "level": "65"
+        },
+        {
+          "class": "devicon-github-plain",
+          "name": "GitHub",
+          "level": "85"
+        },
+        {
+          "class": "devicon-docker-plain",
+          "name": "Docker",
+          "level": "85"
+        },
+        {
+          "class": "devicon-ansible-plain",
+          "name": "Ansible",
+          "level": "85"
+        },
+        {
+          "class": "devicon-prometheus-plain",
+          "name": "Prometheus",
+          "level": "85"
+        },
+        {
+          "class": "devicon-grafana-plain",
+          "name": "Grafana",
+          "level": "85"
+        },
+        {
+          "class": "devicon-jenkins-plain",
+          "name": "Jenkins",
+          "level": "85"
+        },
+        {
+          "class": "devicon-opencv-plain",
+          "name": "OpenCV",
+          "level": "65"
+        },
+        {
           "class": "devicon-mysql-plain",
-          "level": "60"
+          "name": "SQL Server",
+          "level": "65"
         }
-      ]
+        ]
     }
   }
