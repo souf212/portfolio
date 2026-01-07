@@ -1,0 +1,172 @@
+/* --- Staggered Spotlight Layout --- */
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 4rem;
+    /* HUGE gap for breathing room */
+    padding: 2rem 0;
+}
+
+.project-card-spotlight {
+    position: relative;
+    background-color: var(--secondary-color);
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid rgba(136, 146, 176, 0.1);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    height: auto;
+    min-height: 450px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Stagger Effect for Desktop */
+@media (min-width: 900px) {
+    .projects-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+    }
+
+    .staggered-right {
+        margin-top: 4rem;
+        /* Push every second card down */
+    }
+}
+
+.project-card-spotlight:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px -15px rgba(2, 12, 27, 0.7);
+    border-color: var(--primary-color);
+}
+
+/* Inner Layout */
+.card-content-spotlight {
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    z-index: 2;
+    position: relative;
+}
+
+.card-top {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.folder-icon {
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+
+.card-header-text h3 {
+    font-size: 1.4rem;
+    color: #e6f1ff;
+    margin: 0;
+}
+
+.card-subtitle {
+    color: var(--primary-color);
+    font-size: 0.9rem;
+    font-family: var(--font-heading);
+}
+
+.card-main {
+    flex-grow: 1;
+}
+
+.card-description {
+    color: var(--text-secondary);
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.card-tech-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    background: rgba(2, 12, 27, 0.3);
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+.tech-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.tech-label {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--text-secondary);
+    margin-bottom: 0.25rem;
+}
+
+.tech-value {
+    color: #e6f1ff;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+/* Footer & Link */
+.card-footer-spotlight {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.github-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 0.95rem;
+    margin-left: auto;
+    /* Push to right */
+}
+
+.github-link span {
+    transition: transform 0.2s;
+}
+
+.github-link:hover span {
+    transform: translateX(4px);
+}
+
+/* Responsive Stagger Reset */
+@media (max-width: 900px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .staggered-right {
+        margin-top: 0;
+    }
+}
+
+/* Animations */
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.animate-float {
+    animation: float 6s ease-in-out infinite;
+}
