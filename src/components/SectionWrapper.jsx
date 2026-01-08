@@ -1,3 +1,6 @@
+import React from 'react';
+import { motion } from 'framer-motion';
+
 const SectionWrapper = ({ children, className, id }) => {
     return (
         <motion.div
