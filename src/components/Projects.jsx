@@ -101,6 +101,11 @@ const Projects = () => {
                         key={project.id}
                         variants={item}
                         className={`project-card-spotlight ${index % 2 === 0 ? 'staggered-left' : 'staggered-right'}`}
+                        onMouseMove={(e) => {
+                            const rect = e.currentTarget.getBoundingClientRect();
+                            e.currentTarget.style.setProperty('--mouse-x', `${e.clientX - rect.left}px`);
+                            e.currentTarget.style.setProperty('--mouse-y', `${e.clientY - rect.top}px`);
+                        }}
                     >
                         {/* Spotlight Effect overlay handled in CSS */}
                         <div className="spotlight-overlay"></div>

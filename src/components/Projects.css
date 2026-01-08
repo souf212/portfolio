@@ -2,7 +2,7 @@
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 4rem;
     /* HUGE gap for breathing room */
     padding: 2rem 0;
@@ -38,6 +38,25 @@
     transform: translateY(-8px);
     box-shadow: 0 20px 40px -15px rgba(2, 12, 27, 0.7);
     border-color: var(--primary-color);
+}
+
+.spotlight-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(800px circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
+            rgba(255, 255, 255, 0.06),
+            transparent 40%);
+    opacity: 0;
+    transition: opacity 0.5s;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.project-card-spotlight:hover .spotlight-overlay {
+    opacity: 1;
 }
 
 /* Inner Layout */
