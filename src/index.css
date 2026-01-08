@@ -1,3 +1,10 @@
+/* Global Resets */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 /* Google Fonts are now imported in index.html for performance */
 
 /* Global Vars - Dark Premium Palette */

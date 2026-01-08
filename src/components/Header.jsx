@@ -3,6 +3,7 @@ import './Header.css'; // Modular CSS
 import { motion } from 'framer-motion';
 
 const Header = () => {
+    const [isOpen, setIsOpen] = useState(false);
     return (
         <motion.header
             className="header"

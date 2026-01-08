@@ -94,7 +94,7 @@ const Projects = () => {
                 variants={container}
                 initial="hidden"
                 whileInView="show"
-                viewport={{ once: true }}
+                viewport={{ once: true, amount: 0.1 }}
             >
                 {projects.map((project, index) => (
                     <motion.div
